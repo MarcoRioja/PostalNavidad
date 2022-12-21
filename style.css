@@ -61,7 +61,7 @@ body {
 }
 
 
-@media (max-width: 930px) {
+@media (max-width: 700px) {
 
     img,.text {
         width: 100vw ;
