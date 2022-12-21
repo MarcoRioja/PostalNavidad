@@ -59,3 +59,13 @@ body {
         width: 75vh;
     }
 }
+
+
+@media (max-width: 930px) {
+
+    img,.text {
+        width: 100vw ;
+    }
+}
+
+
