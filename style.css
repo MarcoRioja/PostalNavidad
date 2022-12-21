@@ -1,0 +1,65 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    position: absolute;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    background: linear-gradient(45deg, green, white, red);
+}
+
+.text p {
+    color: red;
+    text-shadow: 1px 1px green;
+    font-size: 8vh;
+    text-decoration: underline;
+}
+
+.text p:last-child {
+    color: green;
+    text-shadow: 1px 1px red;
+}
+
+.img {
+    position: absolute;
+    height: 100%;
+    border-radius: 10px;
+    /*---Animacion---*/
+    transition: all 1s ease;
+    opacity: 1;
+    /*---------------*/
+}
+
+.img:hover {
+    opacity: 0.2;
+}
+
+.img:active {
+    opacity: 0;
+}
+
+@media all and (orientation:landscape) {
+
+    img,.text {
+        width: 75vh;
+    }
+}
+
+
+@media (max-width: 870px) {
+    img,.text{
+        width: 100%;
+        height: 100%;
+    }
+}
